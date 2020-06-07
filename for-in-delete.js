@@ -201,11 +201,12 @@ function startsWithK (obj){
 */
 
 //Code Here
-function hiddenTreasure (obj){
-  for (var for in obj){
-    if (key !== "treasure"){
-      delete obj[key]
+function hiddenTreasure(obj){
+  for(let key in obj){
+    if(!obj[key].includes("treasure")){
+      delete obj[key];
     }
-  } return obj;
+  }
+  return obj;
 }
 
