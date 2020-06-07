@@ -118,12 +118,8 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 
 
 // Code here
-let orderTotals = orders.map(function(num){
-  num.price += num.price * num.tax
-   var arr = []
-   arr.push(num.price)
-  })
 
+let orderTotals = orders.map(order => order.price*(1 + order.tax));
 
 ////////// PROBLEM 6 //////////
 

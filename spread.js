@@ -44,8 +44,7 @@ function addNums(num1, num2, num3) {
 }
 
 // code here
-// addNums(numbers)
-// let result = ()
+let result = addNums(...numbers);
 
 ////////// PROBLEM 4 //////////
 
